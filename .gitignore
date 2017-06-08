@@ -1,0 +1,15 @@
+.lein-repl-history
+.nrepl-port
+*.jar
+*.class
+*.txt
+#*#
+.#*
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+/.lein-*
+.hg/
+CHANGELOG.md
