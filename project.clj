@@ -5,7 +5,8 @@
             :url "https://www.gnu.org/copyleft/gpl.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/core.async "0.3.443"]
-                 [cheshire "5.7.1"]]
+                 [cheshire "5.7.1"]
+                 [clj-time "0.13.0"]]
   :java-source-paths ["src/camel"]
   :resource-paths ["lib/commons-net-3.6.jar"]
   :main ^:skip-aot camel.core
