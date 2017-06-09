@@ -29,6 +29,15 @@
         month-maps (zipmap month-names month-data)]
     {"futures" month-maps}))
 
+
+(defn- options-map
+  "Create the map for each futures contract"
+  [symbol exchange json-map expiration-map all-settlements]
+  (let [delimiter (get-in json-map [exchange symbol "options"])
+        option-contracts (rest (str/split all-settlements (re-pattern (str delimiter "\\s"))))
+        months (map (first (str/split % #"\s+")) option-contracts)]
+    nil))
+
   
 (defn make-settlement-maps
   "Take the settlement text and create maps for easier access"
